@@ -20,7 +20,7 @@ import { RouterModule } from "@angular/router";
       </section>
     </main>
   `,
-  imports: [HomeComponent, RouterModule],
+  imports: [RouterModule],
   styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
