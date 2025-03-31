@@ -110,8 +110,8 @@ export class HousingService {
 
   constructor() {}
 
-  getAllHousingLocations(): HousingLocation[] {
-    return this.housingLocationList;
+  getAllHousingLocations(): Promise<HousingLocation[]> {
+    return Promise.resolve(this.housingLocationList);
   }
 
   getHousingLocationById(id: number): HousingLocation | undefined {
